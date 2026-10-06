@@ -7,23 +7,18 @@
 
     <title>Lista de Tarefas</title>
 </head>
-<body>
+<body class="bg-slate-200 h-screen flex justify-center items-center">
+    <div class="bg-white shadow-lg rounded-lg p-4">
+        <h1 class="font-bold text-xl mb-6">Seja bem-vindo(a)</h1>
+        <form class="flex flex-col w-80">
+            <label for="email" class="uppercase text-xs font-bold mb-2 block">Email</label>
+            <input type="email" placeholder="email@email.com" class="pl-3 h-10 border-2 border-slate-400 focus:border-purple-600 duration-150 rounded outline-none mb-4" required />
+            <label for="senha" class="uppercase text-xs font-bold mb-2 block">Senha</label>
+            <input type="password" placeholder="********" class="pl-3 h-10 border-2 border-slate-400 focus:border-purple-600 duration-150 rounded outline-none mb-4" required />
+            <a href="/cadastrar.html" class="my-5">Cadastre-se</a>
+            <button type="submit" class="w-full h-10 rounded bg-purple-400 hover:bg-purple-600 duration-200 hover:text-white font-bold">Logar</button>
 
-    <header class="flex justify-between items-center py-4 px-15 bg-indigo-600">
-        <input type="text" placeholder="Pesquisar" class="h-10 w-100 pl-4 rounded bg-white" >
-        <button class="leading-10 bg-purple-800 rounded px-4 font-bold text-white duration-200 cursor-pointer hover:bg-purple-400 hover:text-black">Nova Tarefa</button>
-    </header>
-
-    <main class="p-15 bg-slate-200">
-        <h1 class="text-3xl">Tarefas</h1>
-        <div id="tarefas" class="grid grid-cols-3 gap-4">
-            <div class="bg-white p-4 rounded-lg">
-                <h3 class="font-bold mb-4">Título do card</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nisi neque nulla maiores odit explicabo, mollitia repellendus ipsum! Labore animi quas sed quis natus enim totam deleniti obcaecati, laboriosam doloribus!</p>
-            </div>
-        </div>
-    </main>
-
-    <script src="index.js"></script>
+        </form>
+    </div>
 </body>
 </html>
